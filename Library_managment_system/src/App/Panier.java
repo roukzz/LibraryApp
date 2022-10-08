@@ -24,7 +24,7 @@ public class Panier {
 				//retirer item
 				//get livre index from panier
 				
-				int articleIndex = TP3Utils.validerEntier("Entrez le numero de l'item a retirer (0 pour annuler):", "Erreur, item invalide ! Recommencez...", 0, nouveauPanier.length);
+				int articleIndex = Utils.validerEntier("Entrez le numero de l'item a retirer (0 pour annuler):", "Erreur, item invalide ! Recommencez...", 0, nouveauPanier.length);
 				if (articleIndex !=0) {
 					nouveauPanier = retirerLivrePanier(nouveauPanier,articleIndex,inventaireLivres);
 				}

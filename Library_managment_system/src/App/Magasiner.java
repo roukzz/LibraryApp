@@ -97,7 +97,7 @@ public class Magasiner {
 						}else {
 
 							String msgSol="\nQuantite (entre 0 et "  + livresDansCat[i].getQteEnInventaire() +" ) :";
-							qte = TP3Utils.validerEntier(msgSol, "Erreur, quatite invalide", 0, livresDansCat[i].getQteEnInventaire());
+							qte = Utils.validerEntier(msgSol, "Erreur, quatite invalide", 0, livresDansCat[i].getQteEnInventaire());
 							if (qte == 0) {
 								System.out.println("Aucun article a ete ajoute au panier");
 								i--;

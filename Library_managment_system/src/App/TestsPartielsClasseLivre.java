@@ -1,11 +1,5 @@
 package App;
-/**
- * INF1120 H22 : TP3.
- * Classe de tests partiels pour la classe Livre
- * 
- * @author melanie lord
- * @version Hiver 2022
- */
+
 public class TestsPartielsClasseLivre {
    
    private static Livre l1;

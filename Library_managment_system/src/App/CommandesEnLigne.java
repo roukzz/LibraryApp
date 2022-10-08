@@ -8,7 +8,7 @@ public class CommandesEnLigne {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String[][] inventaire = TP3Utils.lireFichierInventaire();
+		String[][] inventaire = Utils.lireFichierInventaire();
 		Livre[] livreInventaire = remplirInventaireLivre(inventaire);
 	
 		
@@ -18,6 +18,7 @@ public class CommandesEnLigne {
 			String validUserInput = validateUserInput();
 			if (validUserInput.equals("1")) {
 				// Magasiner
+				
 
 				panier = Magasiner.magasiner(livreInventaire, panier);
 			} else if (validUserInput.equals("2")) {
